@@ -1,0 +1,1 @@
+import{u as t,j as r}from"./index-fff0fbec.js";import{F as m}from"./FormAddEditColumn-7904b7d6.js";import"./index-7a65a9d2.js";import"./index-6691dbaf.js";/* empty css              */function e(){const o=!t("board").columns.length;return r.jsx(m,{Title:"Add New Column",isEditOption:!1,isFirstColumn:o,column:{}})}export{e as AddColumn};

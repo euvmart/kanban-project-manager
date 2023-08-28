@@ -1,0 +1,1 @@
+import{j as l}from"./index-fff0fbec.js";function e({isPrimary:t,handlerClick:n=null,type:o,children:r=null,name:s="",value:u}){return l.jsx("button",{type:o,name:s,value:u,className:`button ${t?"btn-primary-solid":"btn-secondary-stroke"}`,onClick:n,children:r})}export{e as B};
