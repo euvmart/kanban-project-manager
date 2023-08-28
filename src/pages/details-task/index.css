@@ -1,0 +1,100 @@
+.form-details-task {
+  background-color: var(--bkg-md);
+  color: var(--color);
+}
+
+.container-title-subtask {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+  font-size: var(--p);
+}
+.container-title-subtask > h2 {
+  margin: 0;
+  font-size: var(--subtitle);
+  word-break: break-word;
+}
+.menu-task-options {
+  cursor: pointer;
+  position: relative;
+  font-size: var(--title);
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.menu-task-options.view-task-option > .task-options {
+  visibility: visible;
+}
+
+.task-options {
+  position: absolute;
+  width: 150px;
+  background-color: var(--bkg-md);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 32px;
+  right: 0;
+  z-index: 1;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  visibility: hidden;
+}
+.task-options > button,
+.task-options > a {
+  padding: 15px 0;
+  background-color: transparent;
+  outline: transparent;
+  border: transparent;
+  color: var(--color);
+  font-size: var(--p);
+}
+.task-options > a{
+  text-decoration: none;
+  text-align: center;
+}
+.description-task {
+  font-size: var(--p);
+  opacity: 0.6;
+  margin: 0;
+  background-color: var(--bkg-md);
+  color: var(--color);
+  font-family: var(--font-family);
+}
+.container-description-subtask{
+  margin-bottom: 8px;
+}
+.subtitle-description-subtask {
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-size: var(--p);
+}
+.container-description-subtask_list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 250px;
+  overflow-y: auto;
+}
+.form-details-task .btn-primary-solid {
+  padding: 8px 5px;
+  margin-top: 20px;
+}
+.container-description-subtask_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container-description-subtask_title > span {
+  width: 30px;
+  height: 30px;
+  font-size: var(--title);
+  text-align: end;
+  font-weight: 900;
+}

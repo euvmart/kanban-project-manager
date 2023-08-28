@@ -1,0 +1,86 @@
+.container-checkbox {
+  padding-left: 10px;
+  width: 100%;
+  border-radius: var(--border-radius);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--bkg-main);
+  color: var(--color);
+}
+.container-checkbox label {
+  color: inherit;
+  font-size: var(--p);
+  opacity: 1;
+  transition: opacity 0.2s ease;
+  margin: 0;
+  text-transform: lowercase;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+}
+.checkbox {
+  accent-color: var(--brand-color);
+  width: 15px;
+  height: 15px;
+  font-size: 10px;
+  margin: 0;
+}
+
+.checkbox:checked ~ label {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.select {
+  width: 100%;
+  padding: 5px;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--shadows);
+  background-color: transparent;
+  color: var(--color);
+  text-transform: capitalize;
+  font-size: var(--p);
+  font-family: var(--font-family);
+}
+
+.select > option {
+  background-color: var(--bkg-main);
+}
+
+.input-text,
+.textarea {
+  width: 100%;
+  padding: 5px;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--shadows);
+  background-color: transparent;
+  color: var(--color);
+  font-size: var(--p);
+  font-family: var(--font-family);
+}
+.textarea{
+  resize: none;
+  height: 70px;
+}
+.input-text::placeholder,
+.textarea::placeholder {
+  color: var(--placeholder);
+}
+
+
+.wrapper-input-with-button {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.wrapper-input-with-button_button{
+  display: grid;
+  place-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: transparent;
+  font-size: calc(var(--p)*2);
+  color: var(--placeholder);
+}

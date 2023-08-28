@@ -1,0 +1,48 @@
+.section-add-new-board{
+  background-color: var(--bkg-main);
+  height: 100%;
+  color: var(--color);
+}
+.form-add-board{
+  gap: 16px;
+}
+.form-add-board label{
+  font-size: var(--p);
+}
+.form-add-board_data{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.ctn-button-add{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ctn-button-add >button{
+  width: 40px;
+  font-size: var(--title);
+  padding: 0;
+}
+.list-columns-name{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 40vh;
+  overflow-y: auto;
+}
+.section-add-new-board_header{
+  padding: 16px;
+  background-color: var(--bkg-md);
+}
+.section-add-new-board_header >p{
+  margin: 0;
+  font-size: var(--subtitle);
+  color: var(--color);
+}
+@media screen and (max-width: 599px) {
+  .section-add-new-board_header{
+    padding: 16px;
+    background-color: var(--bkg-main);
+  }
+}

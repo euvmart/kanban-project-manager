@@ -1,0 +1,109 @@
+.container-list-boards {
+  height: 100%;
+  overflow: hidden;
+  transition: width 0.3s ease, opacity 0.2s linear;
+}
+.container-list-boards_details {
+  cursor: pointer;
+  height: 100%;
+}
+
+
+.list-boards {
+  color: var(--color);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+.list-boards_list {
+  background-color: var(--bkg-md);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.list-boards .ctn-toggle-theme {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.list-boards_container {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+}
+.list-boards_container > p {
+  padding: 20px 20px 0 20px;
+  font-size: calc(var(--p) * 0.8);
+}
+
+.list-boards_container a {
+  position: relative;
+  width: 100%;
+  color: inherit;
+  font-size: var(--p);
+  text-decoration: none;
+  padding: 10px;
+  padding-left: 20px;
+  border-top-right-radius: var(--rounded-radius);
+  border-bottom-right-radius: var(--rounded-radius);
+}
+
+#create-new-board{
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+#create-new-board > span{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font-size: var(--subtitle);
+}
+#create-new-board.active {
+  color: var(--white);
+  background-color: var(--brand-color);
+}
+#delete-board.active{
+  color: var(--white);
+  background-color: var(--alert);
+}
+
+.list-boards_names-boards {
+  color: inherit;
+  width: 100%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.list-boards_container a:visited {
+  color: inherit;
+}
+.list-boards_names-boards a.active {
+  background-color: var(--brand-color);
+  color: var(--white);
+}
+
+.list-boards_container a:hover {
+  background-color: var(--brand-color);
+  color: var(--white);
+}
+
+@media screen and (max-width: 599px) {
+  .container-list-boards {
+    position: absolute;
+    height: calc(100vh - 50px);
+    top: 50px;
+    width: 100%;
+    background-color: var(--bkg-md);
+    z-index: 1;
+  }
+}
